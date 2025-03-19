@@ -1,0 +1,1 @@
+void energise(cJSON * bundle);

@@ -1,0 +1,2 @@
+echo 'deb https://download.ceph.com/debian-quincy/ bullseye main' > /etc/apt/sources.list.d/ceph.list
+apt-get -y update

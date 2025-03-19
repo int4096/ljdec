@@ -1,0 +1,3 @@
+ceph auth get-or-create mgr.$1 mon 'allow profile mgr' osd 'allow *' mds 'allow *' > /var/lib/ceph/mgr/ceph-$1/keyring
+systemctl start ceph-mgr\@$1
+systemctl enable ceph-mgr\@$1

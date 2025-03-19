@@ -1,0 +1,3 @@
+rm  var/lib/ceph/mon/ceph-$1
+sudo -u ceph mkdir /var/lib/ceph/mon/ceph-$1
+sudo -u ceph ceph-mon --mkfs -i $1 --monmap /tmp/monmap --keyring /tmp/ceph.mon.keyring
